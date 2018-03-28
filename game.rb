@@ -1,3 +1,4 @@
+
 msg1 = "Hello.."
 msg2 = "Want to play a game..?"
 msg3 = "YES???"
@@ -7,13 +8,13 @@ msg5 = "          NO???"
 #<<<<<<<<<<<<<<< print welcome message
 
 puts msg1
-  sleep 0.6
+  sleep 0.1
 puts msg2
-  sleep 0.4
+  sleep 0.1
 puts msg3
-  sleep 0.4
+  sleep 0.1
 puts msg4
-  sleep 0.4
+  sleep 0.1
 print msg5
 puts " "
 answer = gets.chomp.downcase.gsub(/[^a-z0-9\s]/i, '')#(answer = 0)
@@ -33,12 +34,12 @@ while true
     if y1.include? answer 
 
         puts y2
-          sleep 1
+          sleep 0.5
         puts q1
-          sleep 2
+          sleep 0.5
         puts q2        
         
-car = {"Tesla" => "Model S", "Ferrari" => "Ferrari 360", "Mini" => "Cooper", "Land Rover" => "Defender", "Porsche" => "911","Volkswagen" => "Beetle","Nissan" => "Sentra","Audi" => "A4","Hyundai" => "Elantra","Ford" => "Raptor","Honda" => "Civic", "BMW" => "M5","Mercedes-Benz" => "C-class","Toyota" => "Corolla"}
+car = {"Tesla" => "Model S", "Ferrari" => "360", "Mini" => "Cooper", "Land Rover" => "Defender", "Porsche" => "911","Volkswagen" => "Beetle","Nissan" => "Sentra","Audi" => "A4","Hyundai" => "Elantra","Ford" => "Raptor","Honda" => "Civic", "BMW" => "M5","Mercedes-Benz" => "C-class","Toyota" => "Corolla"}
 cars = car.to_a.shuffle.first.to_s.gsub(/[^a-z0-9\s]/i, '')
         
         #         <<<<<<<<<<<<<<        wheels question
